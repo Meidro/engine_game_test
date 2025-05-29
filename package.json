@@ -1,0 +1,19 @@
+{
+  "name": "engine_game_test",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && copy .\\src\\index.html .\\dist /y",
+    "start": "http-server ./dist -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "14.1.1",
+    "typescript": "5.8.3"
+  }
+}
