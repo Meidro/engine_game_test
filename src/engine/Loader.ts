@@ -19,12 +19,20 @@ export class Loader {
     };
   }
 
-  addDataImageOrderLoad(name: string, src: string) {
-    this.loadOrder.dataImagesList[name] = src;
+  addDataImageOrderLoad(imageName: string, src: string) {
+    this.loadOrder.dataImagesList[imageName] = src;
   }
 
-  addDataJsonOrderLoad(name: string, address: string) {
-    this.loadOrder.dataJsonsList[name] = address;
+  addDataJsonOrderLoad(jsonName: string, address: string) {
+    this.loadOrder.dataJsonsList[jsonName] = address;
+  }
+
+  getImage(imageName: string): HTMLImageElement {
+    return this.resources.imagesList[imageName];
+  }
+
+  getJson(jsonName: string): JSON {
+    return this.resources.jsonsList[jsonName];
   }
 
   load(callback: () => void) {
