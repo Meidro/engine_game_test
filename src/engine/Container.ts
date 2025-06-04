@@ -7,7 +7,7 @@ export class Container {
     this.displaySprites = [];
   }
 
-  add(displaySprite: Sprite): void {
+  addDisplaySprite(displaySprite: Sprite): void {
     if (!this.displaySprites.includes(displaySprite)) {
       this.displaySprites.push(displaySprite);
     }

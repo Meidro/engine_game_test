@@ -27,7 +27,7 @@ export class Sprite {
     this.height = this.frame.height;
   }
 
-  draw(ctx: CanvasRenderingContext2D) {
+  draw(ctx: CanvasRenderingContext2D): void {
     ctx.drawImage(
       this.texture,
 
